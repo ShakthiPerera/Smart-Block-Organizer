@@ -1,7 +1,8 @@
 import numpy as np
 
 class Block:
-    def __init__(self, name, pos):
+    def __init__(self, name, col_pos, space):
         self.name = name
-        self.x = pos[0]
-        self.y = pos[1]
+        self.col = col_pos
+        self.row = None
+        self.space = space
